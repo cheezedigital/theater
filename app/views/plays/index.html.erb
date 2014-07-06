@@ -1,0 +1,5 @@
+<h1>Plays</h1>
+<% @plays.each do |play| %>
+<br>
+  <%= link_to play.name, play_path(play.id) %>
+<% end %>

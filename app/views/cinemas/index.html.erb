@@ -1,0 +1,5 @@
+<h1>Cinema</h1>
+<% @cinemas.each do |cinema| %>
+  <br>
+  <%= link_to cinema.name, cinema_path(cinema.id) %>
+<% end %>
